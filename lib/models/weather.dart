@@ -5,7 +5,13 @@ class Weather {
   final double humidity;
   final double windspeed;
 
-  Weather({required this.cityName, required this.temperature, required this.description, required this.humidity, required this.windspeed});
+  Weather({
+    required this.cityName,
+    required this.temperature,
+    required this.description,
+    required this.humidity,
+    required this.windspeed,
+  });
 
   factory Weather.fromJson(Map<String, dynamic> json) {
     return Weather(
